@@ -1,0 +1,48 @@
+@media (max-width: 991.98px) {
+    /* Force nav items to stay in a row on small screens */
+    .navbar-nav {
+        flex-direction: row !important;
+    }
+
+    /* Keep spacing manageable on small screens */
+    .navbar-nav .nav-item {
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
+    }
+
+    /* Allow horizontal scroll if they don't fit */
+    .navbar-collapse {
+        overflow-x: auto;
+        justify-content: center !important;
+    }
+
+    .navbar-nav {
+        flex-direction: row !important;
+        justify-content: center;
+    }
+}
+.card-img-top
+{
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    object-position: top;
+}
+
+.content-container
+{
+    border-radius: 25px;
+    margin: 2rem;
+    padding: 2rem;
+    background-color: whitesmoke;
+}
+
+.header-content
+{
+    text-align: center;
+    padding: 1rem;
+}
+
+body {
+    background-color: #2b3035 !important;
+}
