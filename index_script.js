@@ -66,10 +66,8 @@ formCheck.addEventListener('submit', event => {
 
 // -- Part of the code that highlights if a user is at a certain part of the page
 
-// <div class="content-container" id="my-projects">
-// <div class="content-container" id="contact-dev">
-
 const sections = [
+  {section: "#hero-section", button: "#navbar-intro"},
   {section: "#my-projects", button: "#navbar-my-proj"},
   {section: "#contact-dev", button: "#navbar-contact"}
   ].map(({section, button}) => ({
@@ -82,5 +80,6 @@ window.addEventListener('scroll', () => {
     const pos = section.getBoundingClientRect();
     const inView = pos.top - 300 <= 0 && pos.bottom - 300 > 0;
     button.classList.toggle('active', inView);
+    button.classList.toggle('text-decoration-underline', inView);
   });
 });

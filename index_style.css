@@ -1,16 +1,137 @@
+/*Global Stuff*/
+
+body {
+    background-color: #2b3035 !important;
+}
+
+.main-content {
+    width: 100%;
+}
+
+h1, h4 {
+    font-family: 'Source Sans 3', sans-serif;
+}
+
+p, span {
+    font-family: 'Montserrat', sans-serif;
+}
+
+span, h1, h4 {
+    font-weight: 900;
+}
+
+/*Bootstrap Card Edit*/
+
+.card-img-top {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    object-position: top;
+}
+
+.content-container {
+    border-radius: 25px;
+    margin: 3.5rem;
+    padding: 2rem;
+    background-color: whitesmoke;
+}
+
+.card-header-content {
+    text-align: center;
+    padding: 1rem;
+}
+
+/*Custom Bootstrap BG*/
+
+.navbar.bg-body-tertiary {
+    background-color: rgb(43, 48, 53, 0.9) !important;
+    backdrop-filter: blur(6px) !important;
+}
+
+/*Hero Section*/
+
+#hero-section {
+    display: flex;
+    margin: 3.5rem;
+    padding: 2rem;
+}
+
+#hero-section > div {
+    flex: 1;
+    margin: 2rem;
+    padding: 1rem;
+    align-content: center;
+}
+
+#self-intro {
+    text-align: justify;
+}
+
+#self-intro > h1{
+    font-size: 5rem;
+}
+
+#self-picture {
+    justify-content: center;
+}
+
+#self-intro > * {
+    color: whitesmoke;
+}
+
+#self-picture > img{
+    width: 100%;
+}
+
+/*Footer*/
+
+.footer {
+  background-color: #121212;
+  color: #f5f5f5;
+  padding: 1rem;
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+.footer-icons {
+  margin-bottom: 0.5rem;
+}
+
+.footer-icons a {
+  color: #f5f5f5;
+  margin: 0 0.5rem;
+  font-size: 1.5rem;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.footer-icons a:hover {
+  color: rgba(173, 173, 173, 0.9);
+  transform: scale(1.2);
+}
+
+.footer-email a {
+  color: #f5f5f5;
+  text-decoration: none;
+  font-size: 0.95rem;
+  transition: color 0.3s ease;
+}
+
+.footer-email a:hover {
+  color: rgba(173, 173, 173, 0.9);
+}
+
+/*Adjustments based on screen size*/
+
 @media (max-width: 991.98px) {
-    /* Force nav items to stay in a row on small screens */
     .navbar-nav {
         flex-direction: row !important;
     }
 
-    /* Keep spacing manageable on small screens */
     .navbar-nav .nav-item {
         margin-left: 0.5rem;
         margin-right: 0.5rem;
     }
 
-    /* Allow horizontal scroll if they don't fit */
     .navbar-collapse {
         overflow-x: auto;
         justify-content: center !important;
@@ -21,28 +142,14 @@
         justify-content: center;
     }
 }
-.card-img-top
-{
-    width: 100%;
-    aspect-ratio: 16 / 9;
-    object-fit: cover;
-    object-position: top;
-}
 
-.content-container
-{
-    border-radius: 25px;
-    margin: 2rem;
-    padding: 2rem;
-    background-color: whitesmoke;
-}
+@media (max-width: 768px) {
+    #hero-section {
+        flex-direction: column;
+    }
 
-.header-content
-{
-    text-align: center;
-    padding: 1rem;
-}
-
-body {
-    background-color: #2b3035 !important;
+    #hero-section > div {
+        margin: 1rem;
+        padding: 0.5rem;
+    }
 }

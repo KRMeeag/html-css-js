@@ -7,6 +7,9 @@
         <link rel="stylesheet" href="index_style.css">
         <link rel="icon" type="image/x-icon" href="img/favicon_portfolio.ico">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
         <script src="index_script.js" defer></script>
     </head>
     <body>
@@ -24,19 +27,15 @@
                     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                         <ul class="navbar-nav ms-auto gap-5">
                             <li class="nav-item">
-                                <a class="nav-link" href="#my-projects" id="navbar-my-proj">Portfolio</a>
-                            
+                                <a class="nav-link" href="#hero-section" id="navbar-intro" aria-label="Go to My Projects (Introduction)">Introduction</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#contact-dev" id="navbar-contact">Contact Me</a>
+                                <a class="nav-link" href="#my-projects" id="navbar-my-proj" aria-label="Go to Portfolio - My Projects">Portfolio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#contact-dev" id="navbar-contact" aria-label="Go to Contact section">Contact Me</a>
                             </li>
                         </ul>
-
-                        <!--
-                        <div class="navbar-nav position-absolute start-50 translate-middle-x d-flex flex-row gap-5">
-                            
-                        </div>
-                        -->
                     </div>
                 </div>
             </nav>
@@ -44,11 +43,11 @@
         <div class="main-content">
             <!--Bootstrap Modal Implementation-->
             <div>
-                <div class="modal fade" id="modalSV" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal fade" id="modalSV" tabindex="-1" aria-labelledby="modalSVLabel" aria-hidden="true">
                     <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable text-center">
                         <div class="modal-content">
                             <div class="modal-header">
-                                <h1 class="modal-title fs-5" id="exampleModalLabel">Second Vision Details</h1>
+                                <h1 class="modal-title fs-5" id="modalSVLabel">Second Vision Details</h1>
                                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                             </div>
                         <div class="modal-body">
@@ -76,16 +75,16 @@
                             </p>
                         </div>
                             <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" aria-label="Close Second Vision details">Close</button>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="modal fade" id="modalCK" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal fade" id="modalCK" tabindex="-1" aria-labelledby="modalCKLabel" aria-hidden="true">
                     <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable text-center">
                         <div class="modal-content">
                             <div class="modal-header">
-                                <h1 class="modal-title fs-5" id="exampleModalLabel">Cook-oo Details</h1>
+                                <h1 class="modal-title fs-5" id="modalSVLabel">Cook-oo Details</h1>
                                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                             </div>
                         <div class="modal-body">
@@ -113,16 +112,16 @@
                             </p>
                         </div>
                             <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" aria-label="Close Cook-oo details">Close</button>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="modal fade" id="modalKRZ" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal fade" id="modalKRZ" tabindex="-1" aria-labelledby="modalKRZLabel" aria-hidden="true">
                     <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable text-center">
                         <div class="modal-content">
                             <div class="modal-header">
-                                <h1 class="modal-title fs-5" id="exampleModalLabel">Inventory Management System Details</h1>
+                                <h1 class="modal-title fs-5" id="modalSVLabel">Inventory Management System Details</h1>
                                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                             </div>
                         <div class="modal-body">
@@ -150,10 +149,24 @@
                             </p>
                         </div>
                             <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" aria-label="Close Kraze Inventory details">Close</button>
                             </div>
                         </div>
                     </div>
+                </div>
+            </div>
+            <!--Additional Hero Section-->
+            <div id="hero-section">
+                <div id="self-picture">
+                    <img src="img/portrait.png" alt="Picture of Kenth, the developer of this portfolio website.">
+                </div>
+                <div id="self-intro">
+                    <h1>
+                        Hello there!
+                    </h1>
+                    <p>
+                        My name is Kenth Razen Magbanua, a 3rd Year Student in De La Salle Lipa. Welcome to my portfolio!
+                    </p>
                 </div>
             </div>
             <!--Bootstrap Card Implementation-->
@@ -166,7 +179,7 @@
                             <div class="card-body d-flex flex-column justify-content-center">
                                 <h5 class="card-title">Second Vision</h5>
                                 <p class="card-text">A proposed concept of an assistive wearable technology aimed at helping severely visually impaired individuals navigate their surroundings</p>
-                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalSV">
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalSV" aria-controls="modalSV" aria-haspopup="dialog">
                                     Learn More
                                 </button>
                             </div>
@@ -178,7 +191,7 @@
                             <div class="card-body d-flex flex-column justify-content-center">
                                 <h5 class="card-title">Cook-oo</h5>
                                 <p class="card-text">A proposed concept of a cooking app that provides a catalogue of healthy recipes based on ingredients that are currently accessible to the user</p>
-                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalCK">
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalCK" aria-controls="modalCK" aria-haspopup="dialog">
                                     Learn More
                                 </button>
                             </div>
@@ -190,7 +203,7 @@
                             <div class="card-body d-flex flex-column justify-content-center">
                                 <h5 class="card-title">Kraze Sportswear Inventory Management System</h5>
                                 <p class="card-text">A database management system that aims to modernize the inventory manage system of a local sportswear shop in Barangay Mabini, Lipa City, Batangas</p>
-                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalKRZ">
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalKRZ" aria-controls="modalKRZ" aria-haspopup="dialog">
                                     Learn More
                                 </button>
                             </div>
@@ -236,8 +249,18 @@
                 </div>
             </div>
         </div>
-        <footer>
-
+        <footer class="footer">
+        <div class="footer-icons">
+            <a href="https://github.com/KRMeeag" aria-label="Open Kenth Razen's GitHub profile">
+                <i class="bi bi-github"></i>
+            </a>
+            <a href="https://www.facebook.com/kenthrazenmagbanua" aria-label="Open Kenth Razen's Facebook profile">
+                <i class="bi bi-facebook"></i>
+            </a>
+        </div>
+        <div class="footer-email">
+            <a href="mailto:kenthrazenmagbanua@gmail.com" aria-label="Send email to Kenth Razen">kenthrazenmagbanua@gmail.com</a>
+        </div>
         </footer>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
     </body>
